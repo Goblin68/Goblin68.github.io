@@ -1,3 +1,3 @@
-function onButtonClick() {
-    alert('Button clicked!');
+function myFunction() {
+    alert("I am an alert box!");
   }
