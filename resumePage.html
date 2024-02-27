@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .header {
+  background-color: #8f5353;
+  padding: 20px;
+  text-align: center;
+}
+  .topnav a {
+  float: left;
+  display: block;
+  color: aliceblue;
+  background-color: #532f2f;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+  .topnav a:hover {
+  background-color: #bf8e8e;
+  color: black;
+}
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 300px;
+  padding: 10px;
+  height: 500px;
+
+}
+.column2 {
+  float: right;
+  width: 900px;
+  padding: 10px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.column1 {
+  float: left;
+  width: 300px;
+  padding: 10px;
+  height: 500px;
+
+}
+.column2 {
+  float: right;
+  width: 900px;
+  padding: 10px;
+
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body style = "background-color: #ce8e8e;">
+    <div class="header">
+        <h1 style="color:aliceblue">Resume</h1> <br>
+    
+    </div>
+
+    <div class="topnav">
+        <a href="#">Home</a>
+        <a href="#">Projects</a>
+        <a href="file:///C:/Users/sophc/OneDrive/Documents/github/Goblin68.github.io/Resume.pdf">Full Resume</a>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <div class = "row">
+        <div class = "column1" style="background-color:#8f5353;">
+            <p><center>
+                <a href = "Resume.pdf" target = "_blank"> PDF Full View</a>
+            </p></center>
+            <div class = "resume-preview"><center>
+                <iframe src = "Resume.pdf" frameborder = "0" style="width:300px;height:450px" ></iframe>
+            </div></center>
+        </div>
+        <div class = "column2" style="background-color:#8f5353;">
+            <h2 style="color:aliceblue"> Projects</h2>
+            <p style="color:aliceblue"> <!-- hyper links to projects-->
+                <br>
+                <font size = "+1">
+                    <b>2048 AI</b>
+                </font>
+                <br>
+                An AI algorithm my team and I developed that learns to place 2048 tiles strategically using a neural network<br />
+                <a href="https://github.com/Goblin68/CS_261" style = "float:left" target="_blank">Github</a><br>
+                <a href="https://jacobhack.github.io/CS261-Final-Project/" style = "float:left" target="_blank">Project Website</a><br>
+            </p>
+            <font size = "+2">
+                <b style="color:aliceblue">Personal</b>
+            </font>
+            <p style="color:aliceblue">
+                <font size = "+1">
+                    <b style="color:aliceblue">Text based RPG save system.</b>
+                </font>
+                <br>
+                A pet project I worked on during the summer. Unfortunately due to school I grew too busy to work on it recently<br />
+                but I hope to continue it once I have more time<br />
+                <a href="https://github.com/Goblin68/Save-system" style = "float:left" target="_blank">Github</a><br />
+            </p>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
