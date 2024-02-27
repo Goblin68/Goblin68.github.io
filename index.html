@@ -2,98 +2,83 @@
 <html>
 <head>
 <style>
-p.double {border-style: double;}
-.button {
-  background-color: #580d0d; /* red */
-  border: 2px solid #ffffff;
-  color: white;
+    .header {
+  background-color: #8f5353;
   padding: 20px;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
 }
-.button4 {border-radius: 12px;}
+  .topnav a {
+  float: left;
+  display: block;
+  color: aliceblue;
+  background-color: #532f2f;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+  .topnav a:hover {
+  background-color: #bf8e8e;
+  color: black;
+}
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 300px;
+  padding: 10px;
+  height: 500px;
+
+}
+.column2 {
+  float: right;
+  width: 900px;
+  padding: 10px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
 </style>
 </head>
+<body style = "background-color: #ce8e8e;">
+  <div class="header">
+    <h1 style="color:aliceblue">M Caputo</h1> <br>
+    <h3 style="color:aliceblue">Computer Science and Psychology Major</h3>
+  </div>
 
-<body style = "background-color:rgb(244, 196, 186);">
-<table>
-    <tbody>
-        <tr>
-            <td valign = "left" style = "padding:0 10px 0 0" rowspan = "3">
-                <button class="button button4" onclick="window.open('https://goblin68.github.io/');"> Home </button>
+  <div class="topnav">
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+    <br>
+    <br>
+    <br>
+  </div>
+  <div class="row">
+    <div class="column1" style="background-color:#8f5353;">
+      <p style="color:aliceblue"><img src="ProfilePhoto2.JPG" alt="profilePhoto" style="width:300px;height:450px"></p>
+    </div>
+    <div class="column2" style="background-color:#8f5353;">
+      <h2 style="color:aliceblue">Bio</h2>
+      <p style="color:aliceblue">I am a third year, Computer Science and Psychology double major at Willamette University
+      <br> 
+      </p>
+    </div>
+  </div>
 
-            </td>
-            <td valign = "middle" align ="left"></tdvalign>>
-                <button class="button button4" onclick="window.open('https://goblin68.github.io/omelas.html');" > Omelas page </button>
-
-            </td>
-        </tr>
-    </tbody>
-</table>
-
-<h3 class = "double"><center>M Caputo</center></h3>
-<p><center>Undergraduate Psychology and Computer Science major</center></p>
-<table style = "width : 100%" cellpadding = "0">
-    <tbody>
-        <tr> <!--profile photo settings-->
-            <td valign = "right" style = "padding:0 10px 0 0" rowspan = "3">
-                <img src="ProfilePhoto2.JPG" alt="profilePhoto" style="width:300px;height:450px">
-                
-            </td>
-            <td valign = "middle" align ="left">
-                <font size = "+3">
-                    <b>Projects</b>
-                </font>
-
-                <p> <!-- hyper links to projects-->
-                    <br>
-                    <font size = "+1">
-                        <b>2048 AI</b>
-                    </font>
-                    <br>
-                    An AI algorithm my team and I developed that learns to place 2048 tiles strategically using a neural network<br />
-                    <a href="https://github.com/Goblin68/CS_261" style = "float:left" target="_blank">Github</a><br />
-                    More details: 
-                    <a href="https://jacobhack.github.io/CS261-Final-Project/" style = "float:left" target="_blank">Project Website</a><br />
-                </p>
-                <font size = "+2">
-                    <b>Personal</b>
-                </font>
-                <p>
-                    <font size = "+1">
-                        <b>Text based RPG save system.</b>
-                    </font>
-                    <br>
-                    A pet project I worked on during the summer. Unfortunately due to school I grew too busy to work on it recently<br />
-                    but I hope to continue it once I have more time<br />
-                    <a href="https://github.com/Goblin68/Save-system" style = "float:left" target="_blank">Github</a><br />
-                </p>
-            </td>
-        </tr>
-    </tbody>
-</table><!--Resume section-->
-<h1><center>Resume</h1></center>
-<p><center>
-    <a href = "Resume.pdf" target = "_blank"> PDF Full View</a>
-</p></center>
-<div class = "resume-preview"><center>
-    <iframe src = "Resume.pdf" frameborder = "0" style="width:300px;height:450px" ></iframe>
-</div></center>
-<br>
-<br>
-<center>
-    <button onclick="Button()">Click ME</button>
-
-    <script>
-    function Button() {
-      alert("Hello world");
-    }
-    </script>
-</center>
 </body>
-
 </html>
