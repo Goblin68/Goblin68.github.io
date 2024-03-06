@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .header {
+  background-color: #5b7191;
+  padding: 15px;
+  text-align: center;
+  -webkit-text-stroke: 1px rgb(0, 0, 0);   
+  -webkit-text-fill-color: rgb(255, 230, 0);
+  font-size: 38px;
+}
+.column1 {
+  float: left;
+  width: 300px;
+  padding: 10px;
+  height: 500px;
+
+}
+
+.column4 {
+  float: left;
+  width: 2px;
+  padding: 10px;
+
+}
+.column2 {
+  float: left;
+  width: 550px;
+  padding: 10px;
+
+}
+
+.column3 {
+  float: right;
+  width: 300px;
+  padding: 10px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+.buttonCart {
+  background-color: rgb(255, 230, 0); /* red */
+  border: 2px solid #adc7ee;
+  color: rgb(0, 0, 0);
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+h2 {
+text-decoration: line-through;
+}
+.checked {
+  color: orange;
+}
+</style>
+</head>
+
+<body style = "background-color: #adc7ee;">
+    <div class="header">
+        <h1>SALES 4 YOU</h1> <br>
+
+    </div>
+    <div class="row">
+        <div class="column1" style="background-color:#7a92b5;">
+         
+        </div>
+        <div class="column4" style="background-color:#adc7ee;">
+         
+        </div>
+        <div class="column2" style="background-color:#7a92b5;">
+            <h3>FIFA</h3>
+            <p>ABOUT THIS GAME: FIFA brings even more of the action and realism of football to the pitch in The World’s Game. Play a The closest you'll ever get to playing in the premier league.   Join the Willamette Univesity all pro soccer fan club. Compete, wager, win, lose, play as teams. Make your own lineups and play 2v2. Play tournaments.</p>
+            <br>
+            <p>FIRST WEEK PROMO:  Level up faster the more you play for the first week only! The person who plays the most will make a major advantage after the first week!</p>
+            <!-- Font Awesome Icon Library -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        </div>
+        <div class="column3" style="background-color:#7a92b5;">
+            <h2 style="color:aliceblue">$50.99</h2>
+            <h3 style = color:black> SALE: 30.99 </h3>
+            <button class = "buttonCart" onClick = "Cart()" >
+                Add to Cart
+            </button>
+            <script>
+                function Cart() {
+                    alert("added to cart");
+                }
+            </script>
+  
+        </div>
+    </div>
+
+    
+</body>
+</html>
