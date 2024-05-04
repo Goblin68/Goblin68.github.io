@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
     .header {
   background-color: #8f5353;
@@ -23,33 +24,16 @@
   color: black;
 }
 
-/* Create two equal columns that floats next to each other */
-.column1 {
-  float: left;
-  width: 300px;
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th{
+  text-align: left;
+  vertical-align: top;
   padding: 10px;
-  height: 500px;
-
-}
-.column2 {
-  float: right;
-  width: 900px;
-  padding: 10px;
-
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width:600px) {
-  .column {
-    width: 100%;
-  }
+  background-color: #8f5353;
 }
 
 </style>
@@ -68,17 +52,20 @@
     <br>
     <br>
   </div>
-  <div class="row">
-    <div class="column1" style="background-color:#8f5353;">
-      <p style="color:aliceblue"><img src="ProfilePhoto2.JPG" alt="profilePhoto" style="width:300px;height:450px"></p>
-    </div>
-    <div class="column2" style="background-color:#8f5353;">
-      <h2 style="color:aliceblue">Bio</h2>
-      <p style="color:aliceblue">I am a third year, Computer Science and Psychology double major at Willamette University
-      <br> 
-      </p>
-    </div>
-  </div>
+  <table>
+    <th>
+        <p style="color:aliceblue"><img src="ProfilePhoto2.JPG" alt="profilePhoto" style="width:300px;height:450px"></p>
+
+    </th>
+    <th>
+
+        <h2 style="color:aliceblue">Bio</h2>
+        <p style="color:aliceblue">I am a third year, Computer Science and Psychology double major at Willamette University
+    <br> 
+    </p>
+  </th>
+</table>
+
 
 </body>
 </html>
